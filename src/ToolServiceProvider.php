@@ -14,7 +14,9 @@ class ToolServiceProvider extends ServiceProvider
      */
     public function boot()
     {
-        Nova::script('detached-actions', __DIR__. '/../dist/js/tool.js');
+        Nova::serving(function (ServingNova $event) {
+            Nova::script('detached-actions', __DIR__ . '/../dist/js/tool.js');
+        });
     }
 
     /**
