@@ -2,6 +2,7 @@
 
 namespace Brightspot\Nova\Tools\DetachedActions;
 
+use Laravel\Nova\Events\ServingNova;
 use Laravel\Nova\Nova;
 use Illuminate\Support\ServiceProvider;
 
